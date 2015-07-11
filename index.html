@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <meta charset="UTF-8">
+    <title>Acoustic Junkies</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/paralax.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+</head>
+<body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <!-- The container for the modal slides -->
+    <div class="slides">
+    </div>
+    <!-- Controls for the borderless lightbox -->
+    <!--<h3 class="title"></h3>-->
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause">P</a>
+    <ol class="indicator">I</ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        Previous
+                    </button>
+                    <button type="button" class="btn btn-primary next">
+                        Next
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="parallax">
+    <div id="startBlock" class="parallax__group">
+        <div class="parallax__layer parallax__layer--base">
+      </div>
+    </div>
+    <div id="infoBlock" class="parallax__group">
+        <div class="parallax__layer parallax__layer--base">
+            <div id="links">
+                <a href="images/logo1.jpg" title="Banana" data-gallery>
+                    <img src="images/logo1.jpg" alt="Banana">
+                </a>
+                <a href="images/logo2.jpg" title="Banana" data-gallery>
+                    <img src="images/logo2.jpg" alt="Banana">
+                </a>
+                <a href=" http://cs6052.vk.me/v6052409/16a47/EGdXssrEqPY.jpg" title="Banana" data-gallery>
+                    <img src=" http://cs6052.vk.me/v6052409/16a47/EGdXssrEqPY.jpg" alt="Banana">
+                </a>
+            </div>
+        </div>
+        <div class="parallax__layer parallax__layer--back">
+        </div>
+    </div>
+    <div id="mapBlock" class="parallax__group">
+        <div class="parallax__layer parallax__layer--back">
+            <div class="title">Background Layer</div>
+        </div>
+        <div class="parallax__layer parallax__layer--fore">
+
+            <!--<div class="title">Foreground Layer</div>-->
+        </div>
+        <div class="parallax__layer parallax__layer--base">
+            <div class="title">Base Layer</div>
+        </div>
+    </div>
+    <div id="linksBlock" class="parallax__group">
+        <div class="parallax__layer parallax__layer--base">
+            <div class="title">Base Layer</div>
+        </div>
+        <div class="parallax__layer parallax__layer--back">
+            <div class="title">Background Layer</div>
+        </div>
+        <div class="parallax__layer parallax__layer--deep backgroundDiv">
+            <div class="title">Deep</div>
+        </div>
+    </div>
+    <div id="endBlock" class="parallax__group">
+        <div class="parallax__layer parallax__layer--base">
+        </div>
+    </div>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+<script src="js/bootstrap-image-gallery.min.js"></script>
+
+<script>
+    document.getElementById('links').onclick = function (event) {
+        event = event || window.event;
+        var target = event.target || event.srcElement,
+                link = target.src ? target.parentNode : target,
+                options = {index: link, event: event},
+                links = this.getElementsByTagName('a');
+        blueimp.Gallery(links, options);
+    };
+</script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+body, p, li {
+    margin: 0;
+    padding: 0;
+}
+
+.conteiner {
+    background-color: #ffcc00;
+    margin: 0;
+    padding: 0;
+
+}

@@ -1,0 +1,12 @@
+.map {
+    width: 90%;
+    height: 70%;
+    border: 3px solid #00a8e1;
+
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}

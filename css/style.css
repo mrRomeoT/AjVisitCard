@@ -10,3 +10,32 @@
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+
+.img_box{
+    width: 100px;
+    height: 100px;
+}
+
+.aboutBlock {
+    display: inline-block;
+    margin: auto 0;
+    border: 4px double black; /* ????????? ??????? */
+
+}
+
+@font-face {
+    font-family: Graffiti; /* ????????? ?????? */
+    src: url(../fonts/sprite_graffiti_shadow.otf); /* ???? ? ????? ?? ??????? */
+}
+
+
+.headerGraffiti {
+    font-family: Graffiti, 'Comic Sans MS', cursive;
+    font-size: 500%;
+    color: black;
+}
+
+.sound_cloud_widget {
+    width: 500px;
+    height: 500px;
+}
